@@ -1,12 +1,14 @@
 import React from 'react';
 
-const UserOutput = () => {
+import './UserOutput.css';
+
+const userOutput = props => {
   return (
-    <div>
-      <p />
-      <p />
+    <div className="UserOutput">
+      <p>Username: {props.userName}</p>
+      <p>I hope I'll be overwritten!</p>
     </div>
   );
 };
 
-export default UserOutput;
+export default userOutput;
